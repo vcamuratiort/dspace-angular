@@ -1,0 +1,26 @@
+// Override or add CSS variables for your theme here
+
+:root {
+  --ds-header-logo-height: 40px;
+  --ds-banner-text-background: rgba(0, 0, 0, 0.45);
+  --ds-banner-background-gradient-width: 300px;
+  --ds-home-news-link-color: #{$green};
+  --ds-home-news-link-hover-color: #{darken($green, 15%)};
+  --ds-header-navbar-border-bottom-color: #{$green};
+  
+  --ds-header-bg: #{$primary};
+  --ds-header-icon-color: #{$white};
+  --ds-header-navbar-border-bottom-color: #363636;
+  --ds-navbar-link-color: #{$white};
+  $admin-sidebar-bg: #363636;
+  --ds-footer-logo-height: 40px;
+  --ds-breadcrumb-bg: #e8e0df !important;
+  --ds-breadcrumb-link-color: #{$primary};
+  --ds-breadcrumb-link-active-color: #{$primary};
+  --ds-slider-color: #{$primary};
+  
+  --footer-font-size: 14px;
+  --ds-footer-bg: #{$ort-gray};
+
+}
+

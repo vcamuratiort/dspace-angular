@@ -1,0 +1,37 @@
+<header class="header">
+  <nav role="navigation" [attr.aria-label]="'nav.user.description' | translate" class="container navbar navbar-expand-md px-0" class="d-md-none d-flex">
+    <div class="d-flex flex-grow-1 ml-3 align-items-center">
+      <div class="">
+        <a class=" m-2" href="https://www.ort.edu.uy/">
+          <img src="assets/images/logo-ort.svg" [attr.alt]="'menu.header.image.logo' | translate"/>
+        </a>
+      </div>
+      <div class="rad-logo-div ml-sm-2 ml-md-3">
+        <a href="/" class="ml-3 align-self-center">
+          <img src="../assets/images/radLogo.svg" [attr.alt]="'menu.header.image.logo'| translate">
+        </a>
+    </div>  
+    </div>
+    <div class="d-flex flex-grow-1 ml-auto justify-content-end align-items-center">
+      <!-- <ds-search-navbar class="navbar-search"></ds-search-navbar> -->
+
+      <a [routerLink]="'/search'" [attr.data-test]="'header-search-icon' | dsBrowserOnly" class="searchIcon d-md-none mr-3">
+        <em class="fas fa-search fa-lg fa-fw"></em>
+      </a>
+
+      <!-- <ds-lang-switch></ds-lang-switch> -->
+      <!-- <ds-context-help-toggle></ds-context-help-toggle> -->
+      <!-- <ds-themed-auth-nav-menu></ds-themed-auth-nav-menu> -->
+      <!-- <ds-impersonate-navbar></ds-impersonate-navbar> -->
+      <!-- <div class="pl-2">
+        <button class="navbar-toggler" type="button" (click)="toggleNavbar()"
+                aria-controls="collapsingNav"
+                aria-expanded="false" [attr.aria-label]="'nav.toggle' | translate">
+          <span class="navbar-toggler-icon fas fa-bars fa-fw" aria-hidden="true"></span>
+        </button>
+      </div> -->
+    </div>
+  </nav>
+  <ds-themed-navbar></ds-themed-navbar>
+
+</header>

@@ -1,0 +1,26 @@
+<div class="container-fluid search-container">
+    <div class="container">
+     <div class="row align-items-center">
+       <ds-search-form class="col-12" [inPlaceSearch]="false" [searchPlaceholder]="'home.search-form.placeholder' | translate"></ds-search-form>
+     </div>
+   </div>
+ </div>
+ <div class="container">
+   <ng-container *ngIf="(site$ | async) as site">
+     <ds-view-tracker [object]="site"></ds-view-tracker>
+   </ng-container>
+ </div>
+ <div class="info-container">
+   <div class="container">
+     El Repositorio Académico Digital de la Universidad ORT Uruguay es un espacio para almacenar, organizar, preservar, dar libre acceso y visibilidad a nivel nacional e internacional de la producción científica, académica y cultural generada por los integrantes de la comunidad universitaria, en formato digital.
+   </div>
+ </div>
+ <div class="container-fluid communities-container">
+   <div class="container">
+     <ds-top-level-community-list></ds-top-level-community-list>
+   </div>
+ </div>
+ <div class="container mt-4">
+   <ds-recent-item-list *ngIf="recentSubmissionspageSize>0"></ds-recent-item-list>
+ </div>
+ 

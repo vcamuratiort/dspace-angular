@@ -1,0 +1,83 @@
+.card {
+    padding: 0;
+    background: #ffffff;
+    box-shadow: 3px 3px 4px rgba(0,0,0,.25);
+    border-radius: 5px;
+    text-align: center;
+    height: 228px;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card a {
+    color: #363636;
+    transition: .3s;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #363636;
+}
+
+.card-header {
+    border-bottom: 0;
+    background-color: #f5f2f2;
+}
+
+[data-community-title*="Administración y Ciencias Sociales"] .card-header::before { 
+    content: "";
+    background-image: url("/assets/images/facs.svg");
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 70px;
+    width: 50px;
+}
+
+[data-community-title*="Arquitectura"] .card-header::before { 
+    content: "";
+    background-image: url("/assets/images/fa.svg");
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 70px;
+    width: 50px;
+}
+
+[data-community-title*="Comunicación y Diseño"] .card-header::before { 
+    content: "";
+    background-image: url("/assets/images/fcd.svg");
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 70px;
+    width: 50px;
+}
+
+[data-community-title*="Ingeniería"] .card-header::before { 
+    content: "";
+    background-image: url("/assets/images/fi.svg");
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 70px;
+    width: 50px;
+}
+
+ [data-community-title*="Educación"] .card-header::before { 
+    content: "";
+    background-image: url("/assets/images/ie.svg");
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 70px;
+    width: 50px;
+}
+
+@media screen and (max-width: map-get($grid-breakpoints, md)) {
+    .card {
+        height: auto;
+    }
+}

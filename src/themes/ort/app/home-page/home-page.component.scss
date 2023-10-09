@@ -1,0 +1,18 @@
+.search-container {
+    background: url("/assets/images/bg-search-left.png") no-repeat left top / 50%, url("/assets/images/bg-search-right.png") no-repeat right top / 50%, #661020;
+}
+
+.info-container {
+    height: auto;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 50px;
+}
+
+.communities-container {
+    background: url("/assets/images/bg-communities-top.svg") no-repeat center top / contain, url("/assets/images/bg-communities-bottom.svg") no-repeat center bottom / contain, #661020;
+    padding: 60px 0;
+    height: auto;
+}

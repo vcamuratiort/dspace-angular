@@ -1,0 +1,31 @@
+:host {
+  footer {
+    z-index: var(--ds-footer-z-index);
+    padding: var(--ds-footer-padding);
+    font-size: var(--footer-font-size);
+    background-color: var(--ds-footer-bg);
+    margin-top: 80px;
+
+    div > img {
+      height: var(--ds-footer-logo-height);
+    }
+
+    .top-footer {
+      background-color: var(--bs-white);
+    }
+
+    .ort-logo-div {
+      margin-right: 1em;
+      width: 110px;
+      display: inline-block;
+    }
+
+    .ort-logo { 
+      background: rgba(0, 0, 0, 0) url("https://www.ort.edu.uy/innovafront/theme/common/img/sprites-logoORT.svg") no-repeat scroll 0 -103px / 100% auto;
+      display: block;
+      height: 62px;
+      overflow: hidden;
+      text-indent: -9000px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<nav [ngClass]="{'open': !(menuCollapsed | async)}" [@slideMobileNav]="!(windowService.isXsOrSm() | async) ? 'default' : ((menuCollapsed | async) ? 'collapsed' : 'expanded')"
+  class="navbar navbar-expand-md navbar-light p-0 navbar-container" role="navigation" [attr.aria-label]="'nav.main.description' | translate">
+  <div class="navbar-inner-container w-100 h-100" [class.container]="!(isXsOrSm$ | async)">
+    <div class="d-flex mt-3 mb-3">
+      <div class="">
+        <a href="https://www.ort.edu.uy/">
+          <img src="../../assets/images/logo-ort.svg" [attr.alt]="'menu.header.image.ort.logo'| translate" class="ort-logo"/>
+        </a>
+      </div>
+      <div class="rad-logo-div ml-3">
+          <a href="/" class="ml-3">
+            <img src="../assets/images/radLogo.svg" height="50px" [attr.alt]="'menu.header.image.logo'| translate">
+          </a>
+      </div>    
+    </div>
+    <div class="right-navbar-items d-flex">
+      <ds-search-navbar class="navbar-collapsed"></ds-search-navbar>
+      <ds-lang-switch class="navbar-collapsed"></ds-lang-switch>
+      <ds-context-help-toggle class="navbar-collapsed"></ds-context-help-toggle>
+      <!-- <ds-themed-auth-nav-menu class="navbar-collapsed"></ds-themed-auth-nav-menu> -->
+      <ds-impersonate-navbar class="navbar-collapsed"></ds-impersonate-navbar>
+    </div>
+  </div>
+</nav>

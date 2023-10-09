@@ -1,0 +1,31 @@
+.search-div {
+  margin: 85px 0;
+}
+
+// temporary fix for bootstrap 4 beta btn color issue
+.btn-secondary {
+  background-color: #D9D9D9; // var(--bs-input-bg);
+  color: #661020; //var(--bs-input-color);
+  border-color: #D9D9D9;
+  width: 59px;
+}
+
+.scope-button {
+  max-width: var(--ds-search-form-scope-max-width);
+}
+
+.search-div .list-group-item {
+  padding: 0;
+  margin-right: 50px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.search-div input {
+  height: 45px;
+}
+
+a {
+  color: #FFFFFF;
+}

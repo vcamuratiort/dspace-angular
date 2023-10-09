@@ -1,0 +1,32 @@
+// Add any global css for the theme here
+
+// imports the base global style
+@import '../../../styles/_global-styles.scss';
+
+body {
+  font-family: #{$font-family-open-sans};
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h5 { font-size: 1.1rem; font-weight: 600; }
+h2 { font-size: 1.6rem; color: #661020; margin-bottom: 1.2rem; }
+h1 { font-size: 1.9rem; margin-top: 2rem; }
+
+.facet-filter, .setting-option {
+  background-color: var(--bs-light);
+  border-radius: var(--bs-border-radius);
+
+  &.p-3 {
+    // Needs !important because the original bootstrap class uses it
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .badge-secondary {
+    background-color: var(--bs-primary);
+  }
+
+}
